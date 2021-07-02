@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital</title>
+    <link rel="icon" href="">
+    <style>
+        html{font-size:62.5%; height:100%; }
+        *{padding:0; margin:0; font-family:sans-serif; }
+        header{height:90vh; width:100%; box-sizing:border-box; border:1px black;
+             background:url('images//bg.png');
+             background-size:cover;
+             background-repeat:no-repeat;}
+        nav{height:15vh; 
+            display:flex;
+            align-items:center;
+            }
+       #logo{width:25%; display:flex; }
+       #logo img{height:15vh; width:50%; }
+       #menu{width: 55%;  
+        display:flex;
+        justify-content:space-between;
+         font-size:2.5rem;}
+         #menu a{ text-decoration:none;
+                 color:black}
+                 
+        
+       
+       #line{width:20%; box-sizing:border-box; text-align:right;}
+       #line input{ width:12rem; border-radius: 1rem;
+               background:linear-gradient(to right,cornflowerblue,mediumpurple)}
+       /*<!-------------section---------------->*/
+       section{height:85vh; width:100%;
+               display:flex; justify-content:space-around; align-items:center;}
+        #para{width:50%; text-align:center;}
+        #para p{font-size:3rem; padding:1rem;}
+        #para h1{font-size:5rem; padding:2rem;}
+        #para input{padding:1rem; background:linear-gradient(to right,cadetblue,honeydew); }
+        #dr{width:50%; text-align:center;} 
+        #dr img{width:auto; height:auto; opacity: 0.7;
+                border-radius: 1rem;} 
+        /*<!--------------footer------------------->*/
+        body{ display:flex; flex-direction:column; height:100vh;}
+        footer{width:100%; margin-top:auto; background:aquamarine; display:flex;flex-direction:row; justify-content: space-between; }
+
+        footer img{width:4rem;}     
+       /*<!------------------media----------->*/
+       @media(max-width:780px){
+           html{font-size:50%;}
+           header{width:100%;}
+           #para{width:50%;}
+           #dr{width:50%;}
+           *{padding:0; margin:0;}
+           #dr img{width:100%;}
+       }
+       @media(max-width:380px){
+           html{font-size:35%;}
+           nav{height:15vh;}
+           
+          section{display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;  }
+        
+            
+            
+        
+    
+        
+#para{width:100%;  }
+#para p,h1{padding:3rem;}
+
+#dr{width:100%;}
+#dr img{width:100%;  height:auto; }
+           
+       }
+    </style>
+</head>
+<body>
+    
+<header>
+    <nav>
+        <div id="logo">
+            <img src="images//logo.png">
+            
+        </div>
+        <div id="menu">
+            <a href="">menu</a>
+            <a href="">menu</a>
+            <a href="">menu</a>
+            <a href="">menu</a>
+        </div>
+        <div id="line">
+            <input type="button" value="helpline">
+        
+        </div>
+    </nav>
+    <section>
+        <div id="para">
+           <p>we are here for your care</p>
+           <h1>we the best doctors</h1>
+        <p>we are here 24/7 any help just call us</p>
+        <input type="button" value="make an appinment">
+        </div >
+          
+        <div id="dr">
+            <img src="images//dr1.png">
+        </div>
+    </section>
+
+    
+</header>
+<!----------------------------footer---------------------------->
+<footer>
+   <div id="m">
+      
+  <img src="images//insta.png">
+  <img src="images//whats.png">
+   </div>
+</footer>
+</body>
+</html>
